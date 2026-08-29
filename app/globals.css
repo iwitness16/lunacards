@@ -1745,3 +1745,51 @@ img { display: block; max-width: 100%; }
   transform: translateY(-1px);
 }
 .btn-order-now:disabled { opacity: 0.65; cursor: not-allowed; }
+
+/* ────────────────────────────────────────
+   ORDERS — dual-channel send buttons (WhatsApp / Telegram)
+───────────────────────────────────────── */
+.order-channel-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.btn-channel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+  text-align: left;
+  width: 100%;
+}
+.btn-channel:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+}
+.btn-channel:disabled { opacity: 0.6; cursor: not-allowed; }
+.btn-channel svg { flex-shrink: 0; }
+.btn-channel > span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+.btn-channel strong { font-size: 13px; font-weight: 700; letter-spacing: 0.02em; line-height: 1; color: #fff; }
+.btn-channel small  { font-size: 11px; font-weight: 500; opacity: 0.82; line-height: 1; color: #fff; }
+.btn-channel-wa {
+  background: linear-gradient(135deg, #25d366 0%, #128c52 100%);
+  box-shadow: 0 4px 14px rgba(37,211,102,0.28);
+}
+.btn-channel-tg {
+  background: linear-gradient(135deg, #2aabee 0%, #1d7dba 100%);
+  box-shadow: 0 4px 14px rgba(42,171,238,0.28);
+}
+@media (max-width: 480px) {
+  .order-channel-row { grid-template-columns: 1fr; }
+}
