@@ -87,7 +87,7 @@ const allProducts = [
   { name: 'West Virginia Fake ID (Polycarbonate)', img: 'https://www.fakeids.com/media/product/WV_kZ4hVer.jpg', price: '$100.00' },
   { name: 'Wisconsin Fake ID', img: 'https://www.fakeids.com/media/product/New_WI_VDk5v5F.jpg', price: '$100.00' },
   { name: 'Wyoming Fake ID', img: 'https://www.fakeids.com/media/product/WY_ljSk6gB.jpg', price: '$100.00' },
-  // Canada — individual images per province (sourced from idlord.ph)
+  // Canada — 7 provinces with individual images from idlord.ph CSV
   { name: 'Quebec Fake ID',                  img: 'https://idlord.ph/image/webp/cache/catalog/products/quebec-1-630x420h.webp',                                                                                                          price: 'CA$100.00' },
   { name: 'British Columbia Fake ID',        img: 'https://idlord.ph/image/webp/cache/catalog/products/british_columbia-1-630x420h.webp',                                                                                                 price: 'CA$100.00' },
   { name: 'Saskatchewan Fake ID',            img: 'https://idlord.ph/image/webp/cache/catalog/products/new/saskatchewan1-630x420.webp',                                                                                                   price: 'CA$100.00' },
@@ -95,10 +95,6 @@ const allProducts = [
   { name: 'Alberta Fake DL (2026)',           img: 'https://idlord.ph/image/webp/cache/catalog/products/img_20260423_151420-%E4%B8%B4%E6%97%B6_%E6%8B%B7%E8%B4%9D-630x420.webp',                                                          price: 'CA$100.00' },
   { name: 'British Columbia Fake ID (2025)', img: 'https://idlord.ph/image/webp/cache/catalog/products/1img_20251112_095406-630x420.webp',                                                                                                 price: 'CA$100.00' },
   { name: 'Ontario Fake ID (2025)',           img: 'https://idlord.ph/image/webp/cache/catalog/products/df7f882d306a64eb4b56cc5394b4262-630x420.webp',                                                                                     price: 'CA$100.00' },
-  { name: 'New Brunswick Fake ID',            img: '/images/canada.jpg',                                                                                                                                                                   price: 'CA$100.00' },
-  { name: 'Newfoundland Fake ID',             img: '/images/canada.jpg',                                                                                                                                                                   price: 'CA$100.00' },
-  { name: 'Nova Scotia Fake ID',              img: '/images/canada.jpg',                                                                                                                                                                   price: 'CA$100.00' },
-  { name: 'Prince Edward Island Fake ID',    img: '/images/canada.jpg',                                                                                                                                                                   price: 'CA$100.00' },
   // UK
   { name: 'UK Fake ID — DVLA Photocard (Teslin)', img: 'https://www.fakeids.com/media/product/fakeids_front.jpg', price: '£80.00' },
   { name: 'UK Provisional Licence (Polycarbonate)', img: 'https://www.fakeids.com/media/product/fakeids_front.jpg', price: '£80.00' },

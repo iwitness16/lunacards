@@ -20,7 +20,7 @@ const countries = [
     flag: '🇨🇦',
     code: 'CA',
     name: 'Canada',
-    subtitle: '11 Provincial IDs Available',
+    subtitle: '7 Provincial IDs Available',
   },
   {
     href: '/products/uk',
