@@ -121,6 +121,27 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── TOUCH DOWN REVIEWS — immediately below video ── */}
+        <section className="review-wall-section" aria-labelledby="touchdown-heading">
+          <div className="shell">
+            <h2 id="touchdown-heading">Touch Down Reviews</h2>
+            <p>Real customer proof. Every screenshot is authentic — we deliver every time.</p>
+            <div className="review-wall-grid">
+              {reviewSlots.map((img, i) => (
+                <div className="review-wall-item" key={i}>
+                  <Image
+                    src={`/images/${img}`}
+                    alt={`Customer review ${i + 1}`}
+                    width={360}
+                    height={420}
+                    style={{ width: '100%', aspectRatio: '0.85', objectFit: 'cover', display: 'block', borderRadius: 0 }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <hr className="home-divider" />
 
         {/* ── 3-FEATURE PROOF ── images: usa.jpg / canada.jpg / uk.jpg ── */}
@@ -249,27 +270,6 @@ export default function HomePage() {
                   <Link href="/contact" className="btn-outline-dark">Contact Us</Link>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── TOUCH DOWN REVIEWS ── */}
-        <section className="review-wall-section" aria-labelledby="touchdown-heading">
-          <div className="shell">
-            <h2 id="touchdown-heading">Touch Down Reviews</h2>
-            <p>Real customer proof. Every screenshot is authentic — we deliver every time.</p>
-            <div className="review-wall-grid">
-              {reviewSlots.map((img, i) => (
-                <div className="review-wall-item" key={i}>
-                  <Image
-                    src={`/images/${img}`}
-                    alt={`Customer review ${i + 1}`}
-                    width={360}
-                    height={420}
-                    style={{ width: '100%', aspectRatio: '0.85', objectFit: 'cover', display: 'block', borderRadius: 0 }}
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </section>
