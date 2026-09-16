@@ -3,16 +3,19 @@ import Link from 'next/link'
 import { Footer, PageHeader, SiteHeader } from '@/components/site-shell'
 
 const canadaProducts = [
-  { name: 'Alberta Fake ID', slug: 'alberta', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'British Columbia Fake ID', slug: 'britishcolumbia', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'Manitoba Fake ID', slug: 'manitoba', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'New Brunswick Fake ID', slug: 'newbrunswick', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'Newfoundland Fake ID', slug: 'newfoundland', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'Nova Scotia Fake ID', slug: 'novascotia', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'Ontario Fake ID', slug: 'ontario', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'Prince Edward Island Fake ID', slug: 'princeedwardisland', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
-  { name: 'Quebec Fake ID', slug: 'quebec', img: 'https://www.fakeids.com/media/product/QB_r5To5Ei.jpg' },
-  { name: 'Saskatchewan Fake ID', slug: 'saskatchewan', img: 'https://www.fakeids.com/media/product/BC_nUpqumc.jpg' },
+  // Images sourced from idlord.ph CSV — first product image for each province
+  { name: 'Quebec Fake ID',              img: 'https://idlord.ph/image/webp/cache/catalog/products/quebec-1-630x420h.webp' },
+  { name: 'British Columbia Fake ID',    img: 'https://idlord.ph/image/webp/cache/catalog/products/british_columbia-1-630x420h.webp' },
+  { name: 'Saskatchewan Fake ID',        img: 'https://idlord.ph/image/webp/cache/catalog/products/new/saskatchewan1-630x420.webp' },
+  { name: 'Manitoba Fake ID (2026)',      img: 'https://idlord.ph/image/webp/cache/catalog/products/img_20260302_104011-630x420.webp' },
+  { name: 'Alberta Fake DL (2026)',       img: 'https://idlord.ph/image/webp/cache/catalog/products/img_20260423_151420-%E4%B8%B4%E6%97%B6_%E6%8B%B7%E8%B4%9D-630x420.webp' },
+  { name: 'British Columbia Fake ID (2025)', img: 'https://idlord.ph/image/webp/cache/catalog/products/1img_20251112_095406-630x420.webp' },
+  { name: 'Ontario Fake ID (2025)',       img: 'https://idlord.ph/image/webp/cache/catalog/products/df7f882d306a64eb4b56cc5394b4262-630x420.webp' },
+  // Remaining provinces — use canada.jpg until individual images are available
+  { name: 'New Brunswick Fake ID',        img: '/images/canada.jpg' },
+  { name: 'Newfoundland Fake ID',         img: '/images/canada.jpg' },
+  { name: 'Nova Scotia Fake ID',          img: '/images/canada.jpg' },
+  { name: 'Prince Edward Island Fake ID', img: '/images/canada.jpg' },
 ]
 
 function ProductCard({ name, img }: { name: string; img: string }) {
