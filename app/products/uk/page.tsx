@@ -3,7 +3,7 @@ import { Footer, PageHeader, SiteHeader } from '@/components/site-shell'
 
 const ukProducts = [
   { name: 'UK Fake ID — Scannable DVLA Photocard (Teslin)', img: 'https://www.fakeids.com/media/product/fakeids_front.jpg' },
-  { name: 'UK Provisional Licence (Polycarbonate) — DVLA-Grade', img: 'https://www.fakeids.com/media/product/fakeids_front.jpg' },
+  { name: 'UK Provisional Licence (Polycarbonate) — DVLA-Grade', img: '/images/ukprov.jpg' },
   { name: 'UK Polycarbonate Licence — Genuine DVLA Photocard Stock', img: 'https://www.fakeids.com/media/product/fakeids_front.jpg' },
 ]
 
