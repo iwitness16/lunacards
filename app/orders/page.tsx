@@ -96,9 +96,9 @@ const allProducts = [
   { name: 'British Columbia Fake ID (2025)', img: 'https://idlord.ph/image/webp/cache/catalog/products/1img_20251112_095406-630x420.webp',                                                                                                 price: 'CA$100.00' },
   { name: 'Ontario Fake ID (2025)',           img: 'https://idlord.ph/image/webp/cache/catalog/products/df7f882d306a64eb4b56cc5394b4262-630x420.webp',                                                                                     price: 'CA$100.00' },
   // UK
-  { name: 'UK Fake ID — DVLA Photocard (Teslin)', img: 'https://www.fakeids.com/media/product/fakeids_front.jpg', price: '£80.00' },
+  { name: 'UK Fake ID — DVLA Photocard (Teslin)', img: '/images/uk1.jpg', price: '£80.00' },
   { name: 'UK Provisional Licence (Polycarbonate)', img: '/images/ukprov.jpg', price: '£80.00' },
-  { name: 'UK Polycarbonate Licence — DVLA Stock', img: 'https://www.fakeids.com/media/product/fakeids_front.jpg', price: '£80.00' },
+  { name: 'UK Polycarbonate Licence — DVLA Stock', img: '/images/uk1.jpg', price: '£80.00' },
   // Germany
   { name: 'Germany Fake ID — Scannable Replica', img: '/images/germany.jpg', price: '€100.00' },
   { name: 'Germany Fake ID (Polycarbonate)', img: '/images/germany.jpg', price: '€100.00' },
