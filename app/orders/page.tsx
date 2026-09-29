@@ -6,8 +6,8 @@ import { Footer, SiteHeader } from '@/components/site-shell'
 import { db } from '@/lib/firebase'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
-const ADMIN_WHATSAPP = '19342689086'
-const ADMIN_TELEGRAM = 'Lunacardvault01'
+const ADMIN_WHATSAPP = '17693655992'
+const ADMIN_TELEGRAM = 'lunacardvault02'
 
 /* ── All products ── */
 const allProducts = [
@@ -392,7 +392,7 @@ function OrdersInner() {
               <p className="orders-form-section-title">Contact Information</p>
               <div className="form-row">
                 <label>WhatsApp Contact <span>*</span></label>
-                <input type="tel" placeholder="+1 661 646 5626" value={whatsapp} onChange={e => setWhatsapp(e.target.value)} required />
+                <input type="tel" placeholder="+1 769 365 5992" value={whatsapp} onChange={e => setWhatsapp(e.target.value)} required />
               </div>
 
               <p className="orders-form-section-title">Card Information</p>
@@ -571,7 +571,7 @@ function OrdersInner() {
                     )}
                     <span>
                       <strong>Send via WhatsApp</strong>
-                      <small>+1 (934) 268-9086</small>
+                      <small>+1 (769) 365-5992</small>
                     </span>
                   </button>
 
@@ -591,7 +591,7 @@ function OrdersInner() {
                     )}
                     <span>
                       <strong>Send via Telegram</strong>
-                      <small>@Lunacardvault01</small>
+                      <small>@lunacardvault02</small>
                     </span>
                   </button>
 
