@@ -259,7 +259,11 @@ function OrdersInner() {
     if (channel === 'wa') {
       window.open(`https://wa.me/${ADMIN_WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer')
     } else {
-      window.open(`https://t.me/${ADMIN_TELEGRAM}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer')
+      // Telegram does not support ?text= pre-fill for user chats.
+      // Copy the order summary to clipboard, then open the chat.
+      // The user just pastes (Ctrl+V / long-press) and hits Send.
+      try { await navigator.clipboard.writeText(msg) } catch { /* clipboard blocked */ }
+      window.open(`https://t.me/${ADMIN_TELEGRAM}`, '_blank', 'noopener,noreferrer')
     }
 
     const orderData = {
@@ -591,15 +595,16 @@ function OrdersInner() {
                     )}
                     <span>
                       <strong>Send via Telegram</strong>
-                      <small>@lunacard02</small>
+                      <small>Order copied — just paste &amp; send</small>
                     </span>
                   </button>
 
                 </div>
 
                 <p style={{ fontSize: '12px', color: 'var(--muted)', textAlign: 'center', lineHeight: '1.6' }}>
-                  Your chosen app will open with the order prefilled — just hit Send.
-                  <br />Order is also saved to our system and emailed to our team automatically.
+                  WhatsApp opens with your order pre-filled — just hit Send.
+                  <br />Telegram opens the chat — your order summary is copied to clipboard, just paste and send.
+                  <br />Either way, your order is saved and emailed to our team automatically.
                 </p>
               </div>
             </form>
