@@ -7,7 +7,7 @@ import { db } from '@/lib/firebase'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
 const ADMIN_WHATSAPP = '17272030040'
-const ADMIN_TELEGRAM = 'lunacard02'
+const ADMIN_TELEGRAM = 'Lunacard01'
 
 /* ── All products ── */
 const allProducts = [
